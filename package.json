@@ -13,6 +13,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
+		"ci:release": "pnpm release:registry && changeset tag",
 		"release:registry": "jsrepo publish",
 		"build:registry": "jsrepo build"
 	},
